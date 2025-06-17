@@ -2,7 +2,7 @@
 
 **Real-time aircraft telemetry visualization in Unreal Engine 5.3+**
 
-An Unreal Engine 5.3 app that receives and visualizes real-time aircraft telemetry via UDP, rendering accurate 3D aircraft position and attitude.
+An Unreal Engine 5.3.2 app that receives and visualizes real-time aircraft telemetry via UDP, rendering accurate 3D aircraft position and attitude.
 
 ---
 
