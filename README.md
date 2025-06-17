@@ -2,7 +2,7 @@
 
 **Real-time aircraft telemetry visualization in Unreal Engine 5.3+**
 
-An Unreal Engine 5.3.2 app that receives and visualizes real-time aircraft telemetry via UDP, rendering accurate 3D aircraft position and attitude.
+In this project, a real-time aircraft simulation and 3D visualization system is developed using Unreal Engine 5.3.2, driven by live UDP telemetry data.
 
 ---
 
@@ -15,12 +15,6 @@ An Unreal Engine 5.3.2 app that receives and visualizes real-time aircraft telem
 - **Visual Context:** Floor plane aligned with starting altitude.
 - **Stateless & Robust:** Handles UDP restarts, missing/malformed packets, and stream reinitialization.
 - **Clean Codebase:** Sensitive files excluded via `.gitignore`.
-
----
-
-## 🎥 Demo
-
-Includes a [demo_test_videos.zip](./demo_test_videos.zip) showing real-time updates, smooth camera switching, and UDP integration reliability.
 
 ---
 
@@ -39,17 +33,27 @@ Includes a [demo_test_videos.zip](./demo_test_videos.zip) showing real-time upda
 2. Open Velu_Case_Study_V1.uproject in UE5.3.
 3. Build C++ project in Unreal Editor or Visual Studio.
 4. Run data relay:
-      - Recommended: ./relay_win_x64.exe acstate_recording.bin
+      - Recommended: Run relay_win_x64.exe (Provided)
       - Alternative: python3 relay.py acstate_recording.bin
 5. Press Play in Unreal;
       - A cube representing the aircraft moving in real-time.
       - Use keys 1, 2, 3 to switch cameras (Camera0 - Third-person, Camera1 - operator, Camera2 - Gimbal) respectively.
+        
+---
 
 ## 🧪 Technical Notes
 
 - **Dynamic origin from initial geo-reference.**
 - **Coordinates converted to local ENU system.**
 - **Non-blocking UDP parsing loop ensures performance.**
+
+---
+
+## 🎥 Demo
+
+Includes a [demo_test_videos.zip](./demo_test_videos.zip) showing real-time updates, smooth camera switching, and UDP integration reliability.
+
+---
 
 ## 🙌 Acknowledgements
 Thanks to UDP Socket framework, Unreal Engine input system, geographic conversion sources, and AI-assisted prototyping/documentation.
