@@ -20,7 +20,7 @@ An Unreal Engine 5.3.2 app that receives and visualizes real-time aircraft telem
 
 ## 🎥 Demo
 
-Includes a demo video showing real-time updates, smooth camera switching, and UDP integration reliability.
+Includes a [demo_test_videos.zip](./demo_test_videos.zip) showing real-time updates, smooth camera switching, and UDP integration reliability.
 
 ---
 
