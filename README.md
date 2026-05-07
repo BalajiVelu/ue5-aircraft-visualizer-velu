@@ -33,8 +33,8 @@ In this project, a real-time aircraft simulation and 3D visualization system is 
 2. Open Velu_Case_Study_V1.uproject in UE5.3.
 3. Build C++ project in Unreal Editor or Visual Studio.
 4. Run data relay:
-      - Recommended: Run relay_win_x64.exe (Provided)
-      - Alternative: python3 relay.py acstate_recording.bin
+      - Run this in terminal: python relay.py
+      - Recommended: Make sure Run relay_win_x64.exe & acstate_recording.bin are in the same folder
 5. Press Play in Unreal;
       - A cube representing the aircraft moving in real-time.
       - Use keys 1, 2, 3 to switch cameras (Camera0 - Third-person, Camera1 - operator, Camera2 - Gimbal) respectively.
