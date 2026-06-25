@@ -5,7 +5,6 @@
 UdpReceiverRunnable::UdpReceiverRunnable()
     : Thread(nullptr), bStopThread(false), Socket(), LatestData(std::nullopt)
 {
-    // Create and start the thread (Thread name must be unique)
     Thread = FRunnableThread::Create(this, TEXT("UdpReceiverRunnableThread"));
 }
 
@@ -23,25 +22,21 @@ UdpReceiverRunnable::~UdpReceiverRunnable()
 
 bool UdpReceiverRunnable::Init()
 {
-    // Called before Run(). Can do setup here if needed.
     return true;
 }
 
 uint32 UdpReceiverRunnable::Run()
 {
-    // Thread's main loop
     while (!bStopThread)
     {
-        // Attempt to receive a new AircraftState packet
-        auto Result = Socket.TryGet();  // This comes from your provided UdpSocket
+        auto Result = Socket.TryGet();  
 
         if (Result.has_value())
         {
-            FScopeLock Lock(&DataMutex);  // Make it thread-safe
+            FScopeLock Lock(&DataMutex);  
             LatestData = Result.value();
         }
 
-        // Sleep a bit to prevent CPU hogging (~100Hz loop)
         FPlatformProcess::Sleep(0.01f);
     }
 
@@ -55,7 +50,6 @@ void UdpReceiverRunnable::Stop()
 
 void UdpReceiverRunnable::Exit()
 {
-    // Called after Run() exits
 }
 
 std::optional<case_study::AircraftState> UdpReceiverRunnable::GetLatestData()

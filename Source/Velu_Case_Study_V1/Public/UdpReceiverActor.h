@@ -21,7 +21,7 @@ public:
     virtual void Tick(float DeltaTime) override;
 
     void CheckForNewData();
-    // ? Getter for AircraftData
+    
     const case_study::AircraftState& GetAircraftData() const;
 
 private:

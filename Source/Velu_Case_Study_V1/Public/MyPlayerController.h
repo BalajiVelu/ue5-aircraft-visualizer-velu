@@ -19,8 +19,7 @@ protected:
 	virtual void SetupInputComponent() override;
 
 public:
-	// Removed EditAnywhere/EditInstanceOnly. We find the instance dynamically at runtime.
-	// BlueprintReadWrite is kept if you need to access this reference from Blueprint graphs after BeginPlay.
+	
 	UPROPERTY(BlueprintReadWrite, Category = "Camera")
 	ACameraManagerActor* CameraManager;
 

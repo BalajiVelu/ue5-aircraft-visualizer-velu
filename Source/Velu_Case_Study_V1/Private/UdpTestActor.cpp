@@ -12,7 +12,6 @@ void AUdpTestActor::BeginPlay()
 {
     Super::BeginPlay();
 
-    // Start the UDP receiver thread
     UdpReceiver = new UdpReceiverRunnable();
 }
 
@@ -28,7 +27,7 @@ void AUdpTestActor::Tick(float DeltaTime)
             const auto& State = Data.value();
 
             FString DebugText = FString::Printf(
-                TEXT("Aircraft Pos: Lat=%.6f, Lon=%.6f, Alt=%.2f | Att: Yaw=%.2f°, Pitch=%.2f°, Roll=%.2f°"),
+                TEXT("Aircraft Pos: Lat=%.6f, Lon=%.6f, Alt=%.2f | Att: Yaw=%.2fï¿½, Pitch=%.2fï¿½, Roll=%.2fï¿½"),
                 State.aircraft_latitude__deg,
                 State.aircraft_longitude__deg,
                 State.aircraft_altitude__m_amsl,

@@ -1,4 +1,4 @@
-/*********************************************************************************************************************/
+
 #include "udp_socket.hpp"
 #include <winsock2.h>   
 #include <ws2tcpip.h>   
@@ -6,13 +6,11 @@
 #include <sstream>      
 #include <string>       
 
-/*********************************************************************************************************************/
+
 using namespace qs::libs;
 
-/*********************************************************************************************************************/
-UdpSocket::UdpSocket() : socket_(INVALID_SOCKET), select_(), receiver_(), winsock_initialized_(false) {}
 
-/*********************************************************************************************************************/
+UdpSocket::UdpSocket() : socket_(INVALID_SOCKET), select_(), receiver_(), winsock_initialized_(false) {}
 UdpSocket::~UdpSocket()
 {
     if (socket_ != INVALID_SOCKET)
@@ -22,7 +20,6 @@ UdpSocket::~UdpSocket()
     deinitializeWinsock();
 }
 
-/*********************************************************************************************************************/
 UdpSocket::UdpSocket(UdpSocket&& other) noexcept
 {
     std::swap(socket_, other.socket_);
@@ -31,7 +28,7 @@ UdpSocket::UdpSocket(UdpSocket&& other) noexcept
     winsock_initialized_ = other.winsock_initialized_;
 }
 
-/*********************************************************************************************************************/
+
 UdpSocket& UdpSocket::operator=(UdpSocket&& other) noexcept
 {
     if (this != &other)
@@ -48,7 +45,7 @@ UdpSocket& UdpSocket::operator=(UdpSocket&& other) noexcept
     return *this;
 }
 
-/*********************************************************************************************************************/
+
 bool UdpSocket::initSocket(std::string& error_string) noexcept
 {
     if (!initializeWinsock(error_string))
@@ -66,19 +63,19 @@ bool UdpSocket::initSocket(std::string& error_string) noexcept
     return true;
 }
 
-/*********************************************************************************************************************/
+
 int UdpSocket::sendData(const std::vector<uint8_t>& data) const noexcept
 {
     return sendData(reinterpret_cast<const char*>(data.data()), static_cast<int>(data.size()));
 }
 
-/*********************************************************************************************************************/
+
 int UdpSocket::sendData(const char* buffer, int size) const noexcept
 {
     return sendto(socket_, buffer, size, 0, reinterpret_cast<const sockaddr*>(&receiver_), static_cast<int>(sizeof(receiver_)));
 }
 
-/*********************************************************************************************************************/
+
 int UdpSocket::readData(char* data, int length) noexcept
 {
     static constexpr timeval NO_TIMEOUT{};
@@ -93,8 +90,7 @@ int UdpSocket::readData(char* data, int length) noexcept
     }
 }
 
-/*********************************************************************************************************************/
-// New function: Try to receive and parse AircraftState data from socket buffer
+
 std::optional<case_study::AircraftState> UdpSocket::TryGet()
 {
     constexpr int buffer_size = sizeof(case_study::AircraftState);
@@ -104,7 +100,7 @@ std::optional<case_study::AircraftState> UdpSocket::TryGet()
 
     if (bytes_received == buffer_size)
     {
-        // Assume the data layout exactly matches AircraftState (packed struct)
+        // AircraftState (packed struct)
         case_study::AircraftState state;
         memcpy(&state, buffer, sizeof(case_study::AircraftState));
         return state;
@@ -113,7 +109,7 @@ std::optional<case_study::AircraftState> UdpSocket::TryGet()
     return std::nullopt;
 }
 
-/*********************************************************************************************************************/
+
 bool UdpSocket::setMulticastConfig(const std::string& interface_ip, uint8_t ttl, bool enable_loopback,
     std::string& error_string) const noexcept
 {
@@ -148,7 +144,7 @@ bool UdpSocket::setMulticastConfig(const std::string& interface_ip, uint8_t ttl,
     return true;
 }
 
-/*********************************************************************************************************************/
+
 bool UdpSocket::setUdpSendIpPort(const std::string& ip, uint16_t port, std::string& error_string) noexcept
 {
     receiver_.sin_family = AF_INET;
@@ -168,7 +164,7 @@ bool UdpSocket::setUdpSendIpPort(const std::string& ip, uint16_t port, std::stri
     return true;
 }
 
-/*********************************************************************************************************************/
+
 bool UdpSocket::setUdpListenPort(uint16_t port, std::string& error_string) const noexcept
 {
     sockaddr_in server_address{};
@@ -186,7 +182,7 @@ bool UdpSocket::setUdpListenPort(uint16_t port, std::string& error_string) const
     return true;
 }
 
-/*********************************************************************************************************************/
+
 int32_t UdpSocket::getRxBytesInBuffer() const noexcept
 {
     unsigned long bytes_available = 0;
@@ -197,7 +193,7 @@ int32_t UdpSocket::getRxBytesInBuffer() const noexcept
     return static_cast<int32_t>(std::clamp(bytes_available, 0UL, static_cast<unsigned long>(INT32_MAX)));
 }
 
-/*********************************************************************************************************************/
+
 bool UdpSocket::isSocketReadable(timeval timeout) noexcept
 {
     FD_ZERO(&select_);
@@ -205,7 +201,7 @@ bool UdpSocket::isSocketReadable(timeval timeout) noexcept
     return select(0, &select_, nullptr, nullptr, &timeout) > 0;
 }
 
-/*********************************************************************************************************************/
+
 bool UdpSocket::initializeWinsock(std::string& error_string) noexcept
 {
     if (winsock_initialized_)
@@ -227,7 +223,7 @@ bool UdpSocket::initializeWinsock(std::string& error_string) noexcept
     return true;
 }
 
-/*********************************************************************************************************************/
+
 void UdpSocket::deinitializeWinsock() noexcept
 {
     if (winsock_initialized_)

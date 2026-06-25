@@ -1,7 +1,7 @@
-/*********************************************************************************************************************/
+
 #pragma once
 
-/*********************************************************************************************************************/
+
 #include "aircraft_state.hpp"
 #include <winsock2.h>
 #include <ws2tcpip.h>
@@ -12,11 +12,11 @@
 #include <string>
 #pragma comment(lib, "Ws2_32.lib")
 
-/*********************************************************************************************************************/
+
 namespace qs::libs
 {
 
-    /*********************************************************************************************************************/
+    
     class UdpSocket
     {
     public:
@@ -32,8 +32,7 @@ namespace qs::libs
         int sendData(char const* buffer, int size) const noexcept;
         int readData(char* data, int length) noexcept;
 
-        /// Tries to receive and parse AircraftState data from the socket.
-        /// Returns std::optional<AircraftState> with data if successful, std::nullopt otherwise.
+        
         std::optional<case_study::AircraftState> TryGet();
 
         bool setMulticastConfig(std::string const& interface_ip, uint8_t ttl, bool enable_loopback,
@@ -55,4 +54,4 @@ namespace qs::libs
         void deinitializeWinsock() noexcept;
     };
 
-} // namespace qs::libs
+} 
