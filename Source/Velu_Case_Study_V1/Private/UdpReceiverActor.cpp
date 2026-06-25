@@ -41,13 +41,12 @@ void AUdpReceiverActor::CheckForNewData()
     if (!Socket)
         return;
 
-    constexpr int bufferSize = 1024;  // Adjust size as needed
+    constexpr int bufferSize = 1024;  
     char buffer[bufferSize] = {};
 
     int bytesReceived = Socket->readData(buffer, bufferSize);
     if (bytesReceived > 0)
     {
-        // Assuming AircraftState is POD and matches the data format exactly
         if (bytesReceived == sizeof(AircraftData))
         {
             memcpy(&AircraftData, buffer, sizeof(AircraftData));
@@ -69,10 +68,9 @@ void AUdpReceiverActor::CheckForNewData()
         {
             UE_LOG(LogTemp, Warning, TEXT("UDP receive error: %d"), err);
         }
-        // else no data available, no log needed
+        
     }
 }
-// ? Getter method implementation
 const case_study::AircraftState& AUdpReceiverActor::GetAircraftData() const
 {
     return AircraftData;

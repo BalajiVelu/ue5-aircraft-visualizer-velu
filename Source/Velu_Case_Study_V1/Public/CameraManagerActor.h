@@ -5,6 +5,13 @@
 #include "Camera/CameraComponent.h"
 #include "CameraManagerActor.generated.h"
 
+UENUM()
+enum class ECameraType : uint8
+{
+    ThirdPerson UMETA(DisplayName = "Third Person"),
+    Operator    UMETA(DisplayName = "Operator"),
+    Gimbal      UMETA(DisplayName = "Gimbal")
+};
 UCLASS()
 class VELU_CASE_STUDY_V1_API ACameraManagerActor : public AActor
 {
@@ -24,6 +31,10 @@ protected:
     UPROPERTY(EditAnywhere, Category = "CameraManager")
     AActor* AircraftPawn;
 
+    // Reference to UDP receiver for telemetry data
+    UPROPERTY(EditAnywhere, Category = "CameraManager")
+    class AUdpReceiverActor* UdpReceiverRef;
+
     // Cameras
     UPROPERTY(VisibleAnywhere, Category = "CameraManager")
     UCameraComponent* ThirdPersonCamera;
@@ -36,6 +47,10 @@ protected:
 
 private:
     int32 ActiveCameraIndex;
-
+    FVector OperatorCameraFixedPosition; 
+    bool bHasInitializedOperatorPosition;
+    const TCHAR* GetCameraName(ECameraType Type) const;
     void UpdateActiveCamera();
 };
+
+

@@ -1,4 +1,3 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "Velu_Case_Study_V1.h"
 #include "Modules/ModuleManager.h"

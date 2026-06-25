@@ -1,5 +1,6 @@
 #include "AircraftPawn.h"
 #include "UdpReceiverActor.h"
+#include "GeoCoordinateUtils.h"
 #include "Components/StaticMeshComponent.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
@@ -16,6 +17,7 @@ AAircraftPawn::AAircraftPawn()
         Mesh->SetStaticMesh(Cube.Object);
         RootComponent = Mesh;
     }
+    Mesh->SetVisibility(false);
 
     // Spring Arm for chase camera
     SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
@@ -31,7 +33,7 @@ AAircraftPawn::AAircraftPawn()
     // Gimbal camera
     GimbalCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("GimbalCamera"));
     GimbalCamera->SetupAttachment(RootComponent);
-    GimbalCamera->SetRelativeLocation(FVector(0.0f, 0.0f, 100.0f)); // adjust height if needed
+    GimbalCamera->SetRelativeLocation(FVector(60.0f, 0.0f, 20.0f)); // adjust height if needed
 }
 
 void AAircraftPawn::BeginPlay()
@@ -60,11 +62,15 @@ void AAircraftPawn::Tick(float DeltaTime)
 
     const auto& Aircraft = Receiver->GetAircraftData();
 
-    // Update aircraft position
-    FVector NewLocation;
-    NewLocation.X = (Aircraft.aircraft_latitude__deg - 48.0) * 10000.0f;
-    NewLocation.Y = (Aircraft.aircraft_longitude__deg - 11.0) * 10000.0f;
-    NewLocation.Z = Aircraft.aircraft_altitude__m_amsl;
+    // Update aircraft position using ENU coordinates relative to start position
+    FVector NewLocation = GeoCoordinateUtils::GeoToENU(
+        Aircraft.aircraft_latitude__deg,
+        Aircraft.aircraft_longitude__deg,
+        Aircraft.aircraft_altitude__m_amsl,
+        Aircraft.startposition_latitude__deg,
+        Aircraft.startposition_longitude__deg,
+        Aircraft.startposition_altitude__m_amsl
+    );
     SetActorLocation(NewLocation);
 
     // Update aircraft rotation

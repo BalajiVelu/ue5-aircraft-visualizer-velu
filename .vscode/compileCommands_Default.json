@@ -1,0 +1,170 @@
+[
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Private\\AircraftPawn.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Private\\CameraManagerActor.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Private\\MyPlayerController.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Private\\OperatorCameraActor.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Private\\UdpReceiverActor.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Private\\UdpReceiverRunnable.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Private\\UdpTestActor.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Private\\udp_socket.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Public\\AircraftPawn.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Public\\CameraManagerActor.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Public\\GeoCoordinateUtils.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Public\\MyPlayerController.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Public\\OperatorCameraActor.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Public\\UdpReceiverActor.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Public\\UdpReceiverRunnable.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Public\\UdpTestActor.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Public\\aircraft_state.hpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Public\\udp_socket.hpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Velu_Case_Study_V1.Build.cs",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Velu_Case_Study_V1.cpp",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	},
+	{
+		"file": "W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\Source\\Velu_Case_Study_V1\\Velu_Case_Study_V1.h",
+		"arguments": [
+			"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.34.31933\\bin\\Hostx64\\x64\\cl.exe",
+			"@W:\\Engines\\UE\\Git_repo\\ue5-aircraft-visualizer-velu\\.vscode\\compileCommands_Default\\Velu_Case_Study_V1.1.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.3\\Engine\\Source"
+	}
+]
