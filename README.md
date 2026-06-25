@@ -262,10 +262,10 @@ Three directions I'm actively exploring from this foundation:
 
 MIT License — see [LICENSE](LICENSE)
 
-## Assets
-
-UAV model: "MQ-9 Reaper" by [creadordemu](https://sketchfab.com/creadordemu)  
+### 3D Model
+UAV model: **"MQ-9 Reaper"** by [creadordemu](https://sketchfab.com/creadordemu)  
 License: [CC Attribution](https://skfb.ly/pIY8K)
+
 ---
 
 *Built fast. Shipped. Next: same engine, off the desktop, onto a HoloLens 2.*
